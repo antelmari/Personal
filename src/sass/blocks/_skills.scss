@@ -1,0 +1,44 @@
+.skills {
+    height: 600px;
+    padding-top: 100px;
+    text-align: center;
+    &__message {
+        margin-top: -10px;
+        img {
+            width: 35px;
+            height: 35px;
+            transform: translateY(10px);
+        }
+    }
+}
+
+.swiper {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    &-slide {
+        border: 1px solid $main-color;
+        width: 300px;
+        height: 300px;
+        background-color: #fff;
+        padding: 30px 20px;
+        &-img {
+            height: 65px;
+            img {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &-title {
+            margin-top: 40px;
+        }
+        &-descr {
+            text-align: start;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    }
+    &-pagination-bullet {
+        background-color: $second-color;
+    }
+}

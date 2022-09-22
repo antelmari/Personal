@@ -1,0 +1,48 @@
+.portfolio {
+    height: 600px;
+    &__id {
+        display: block;
+        position: relative;
+        top: -100px;
+        visibility: hidden;
+    }
+    &__title {
+        position: absolute;
+        margin-top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__wrapper {
+        position: absolute;
+        width: 1000px;
+        padding: 0 15px;
+        left: 50%;
+        margin-top: 200px;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 450px;
+        height: 350px;
+        padding: 25px;
+        background-color: #fff;
+        &-img {
+            width: 400px;
+            img {
+                width: 100%;
+            }
+        }
+        &-descr {
+            font-weight: 700;
+            margin-top: 20px;
+            text-align: justify;
+        }
+    }
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: $main-color;
+}

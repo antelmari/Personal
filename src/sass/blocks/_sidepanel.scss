@@ -1,0 +1,23 @@
+.sidepanel {
+    position: absolute;
+    z-index: 2;
+    left: 38px;
+    bottom: 0;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    &__divider {
+        height: 200px;
+        width: 1px;
+        background: linear-gradient(to top, $second-color, #fff);
+    }
+    &__link {
+        width: 24px;
+        height: 24px;
+        img {
+            width: 100%;
+        }
+    }
+}
