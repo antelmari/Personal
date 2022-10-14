@@ -153,7 +153,9 @@
                 font-weight: 500;
                 margin-top: 10px;
                 font-size: 15px;
-                letter-spacing: -0.01em;
+            }
+            &-icon {
+                right: 15px;
             }
         }
     }
@@ -247,6 +249,7 @@
             }
             &-descr {
                 margin-top: 5px;
+                letter-spacing: -0.04em;
             }
         }
     }
@@ -321,7 +324,10 @@
             height: 250px;
             &-descr {
                 font-size: 14px;
-                letter-spacing: -0.08em;
+            }
+            &-icon {
+                right: 7px;
+                bottom: 2px;
             }
         }
     }
@@ -732,7 +738,10 @@
         &__item {
             width: 300px;
             &-descr {
-                letter-spacing: -0.04em;
+                letter-spacing: 0;
+            }
+            &-icon {
+                bottom: 5px;
             }
         }
     }
