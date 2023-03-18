@@ -166,19 +166,22 @@
             margin-left: -150px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -150px;
     }
     .portfolio {
         &__wrapper {
+            margin-top: 170px;
             width: 750px;
+            padding: 0 15px;
         }
         &__item {
             padding: 15px;
-            width: 350px;
-            height: 300px;
+            height: 300px !important;
             &-img {
-                width: 320px;
+                img {
+                    height: 160px;
+                }
             }
             &-descr {
                 font-weight: 500;
@@ -219,7 +222,7 @@
             margin-left: -250px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -250px;
     }
 }
@@ -266,7 +269,7 @@
             margin-left: -350px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -350px;
     }
     .portfolio {
@@ -274,10 +277,11 @@
             width: 650px;
         }
         &__item {
-            width: 300px;
-            height: 270px;
+            height: 270px !important;
             &-img {
-                width: 270px;
+                img {
+                    height: 135px;
+                }
             }
             &-descr {
                 margin-top: 5px;
@@ -343,31 +347,35 @@
             margin-left: -400px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -400px;
     }
     .portfolio {
-        height: 650px;
+        height: 500px;
         &__title {
             margin-top: 40px;
         }
         &__wrapper {
             margin-top: 100px;
             padding: 0;
-            width: 350px;
-            flex-wrap: wrap;
+            width: 450px;
         }
         &__item {
-            margin-top: 10px;
-            padding: 10px;
-            width: 350px;
-            height: 250px;
+            padding: 25px;
+            height: 350px !important;
+            &-img {
+                img {
+                    height: 204px;
+                }
+            }
             &-descr {
-                font-size: 14px;
+                margin-top: 20px;
+                font-weight: 700;
+                font-size: 16px;
+                letter-spacing: 0;
             }
             &-icon {
-                right: 7px;
-                bottom: 2px;
+                right: 25px;
             }
         }
     }
@@ -395,7 +403,7 @@
             margin-left: -450px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -450px;
     }
 }
@@ -446,7 +454,7 @@
             margin-left: -500px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -500px;
     }
 }
@@ -497,7 +505,7 @@
             margin-left: -600px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -600px;
     }
 }
@@ -584,8 +592,30 @@
             margin-left: -700px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -700px;
+    }
+    .portfolio {
+        &__wrapper {
+            width: 350px;
+        }
+        &__item {
+            padding: 15px;
+            height: 300px !important;
+            &-img {
+                img {
+                    height: 160px;
+                }
+            }
+            &-descr {
+                font-weight: 500;
+                margin-top: 10px;
+                font-size: 15px;
+            }
+            &-icon {
+                right: 15px;
+            }
+        }
     }
 }
 
@@ -649,7 +679,7 @@
             margin-left: -750px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -750px;
     }
 }
@@ -737,7 +767,7 @@
             margin-left: -785px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -785px;
     }
     .portfolio {
@@ -745,12 +775,15 @@
             width: 300px;
         }
         &__item {
-            width: 300px;
-            &-descr {
-                letter-spacing: 0;
+            height: 270px !important;
+            &-img {
+                img {
+                    height: 135px;
+                }
             }
-            &-icon {
-                bottom: 5px;
+            &-descr {
+                margin-top: 5px;
+                letter-spacing: -0.04em;
             }
         }
     }
@@ -838,7 +871,7 @@
             margin-left: -800px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -800px;
     }
 }
@@ -852,7 +885,7 @@
             margin-left: -810px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -810px;
     }
 }
@@ -866,7 +899,7 @@
             margin-left: -815px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -815px;
     }
 }
@@ -880,7 +913,7 @@
             margin-left: -820px;
         }
     }
-    .swiper {
+    .mySwiper {
         margin-left: -820px;
     }
 }

@@ -142,28 +142,63 @@
         <div id="particles-js">
             <div class="portfolio__id" id="portfolio"></div>
             <h2 class="title portfolio__title">Мои работы</h2>
-            <div class="portfolio__wrapper">
-                <div class="portfolio__item">
-                    <a href="webovio/index.html" target="_blank" class="portfolio__item-img">
-                        <img src="img/sites/webovio.jpg" alt="webovio">
-                    </a>
-                    <div class="portfolio__item-descr">
-                        Вёрстка сложного макета. HTML, SCSS. Сетка Bootstrap. Полная адаптация под все экраны. Методология БЭМ. Планировщик задач Gulp
+            <div class="portfolio__wrapper swiper portfolioSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide portfolio__item">
+                        <a href="speedcam/index.html" target="_blank" class="portfolio__item-img">
+                            <img src="img/sites/speedcam.jpg" alt="speedcam">
+                        </a>
+                        <div class="portfolio__item-descr">
+                            Вёрстка макета. HTML, SCSS, JS, jQuery. API Яндекс Карт. Полная адаптация под все экраны. Magnific Popup. Masked Input. БЭМ. Gulp
+                        </div>
+                        <a href="https://github.com/antelmari/speedcam" target="_blank" class="portfolio__item-icon">
+                            <img src="icons/social/github-black.svg" alt="github">
+                        </a>
                     </div>
-                    <a href="https://github.com/antelmari/Webovio" target="_blank" class="portfolio__item-icon">
-                        <img src="icons/social/github-black.svg" alt="github">
-                    </a>
-                </div>
-                <div class="portfolio__item">
-                    <a href="pulse/index.html" target="_blank" class="portfolio__item-img">
-                        <img src="img/sites/pulse.jpg" alt="pulse">
-                    </a>
-                    <div class="portfolio__item-descr">
-                        HTML, SCSS, jQuery. Технология вёрстки Flexbox. Полная адаптация под все экраны. Методология БЭМ. Планировщик задач Gulp
+                    <div class="swiper-slide portfolio__item">
+                        <a href="integlab/index.html" target="_blank" class="portfolio__item-img">
+                            <img src="img/sites/integlab.jpg" alt="integlab">
+                        </a>
+                        <div class="portfolio__item-descr">
+                            Сайт для веб-студии. HTML, SCSS, JS, jQuery. Полная адаптация под все экраны. Валидация. Magnific Popup. Методология БЭМ. Gulp
+                        </div>
+                        <a href="https://github.com/antelmari/integlab" target="_blank" class="portfolio__item-icon">
+                            <img src="icons/social/github-black.svg" alt="github">
+                        </a>
                     </div>
-                    <a href="https://github.com/antelmari/Pulse" target="_blank" class="portfolio__item-icon">
-                        <img src="icons/social/github-black.svg" alt="github">
-                    </a>
+                    <div class="swiper-slide portfolio__item">
+                        <a href="gantt/index.html" target="_blank" class="portfolio__item-img">
+                            <img src="img/sites/gantt.jpg" alt="integlab">
+                        </a>
+                        <div class="portfolio__item-descr">
+                            Диаграмма Ганта. Библиотека amCharts 5. HTML, JS. Fetch API (async/await). JSON. Без адаптации. Планировщик задач Gulp
+                        </div>
+                        <a href="https://github.com/antelmari/gantt" target="_blank" class="portfolio__item-icon">
+                            <img src="icons/social/github-black.svg" alt="github">
+                        </a>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <a href="webovio/index.html" target="_blank" class="portfolio__item-img">
+                            <img src="img/sites/webovio.jpg" alt="webovio">
+                        </a>
+                        <div class="portfolio__item-descr">
+                            Вёрстка сложного макета. HTML, SCSS. Сетка Bootstrap. Полная адаптация под все экраны. Методология БЭМ. Планировщик задач Gulp
+                        </div>
+                        <a href="https://github.com/antelmari/Webovio" target="_blank" class="portfolio__item-icon">
+                            <img src="icons/social/github-black.svg" alt="github">
+                        </a>
+                    </div>
+                    <div class="swiper-slide portfolio__item">
+                        <a href="pulse/index.html" target="_blank" class="portfolio__item-img">
+                            <img src="img/sites/pulse.jpg" alt="pulse">
+                        </a>
+                        <div class="portfolio__item-descr">
+                            HTML, SCSS, jQuery. Технология вёрстки Flexbox. Полная адаптация под все экраны. Методология БЭМ. Планировщик задач Gulp
+                        </div>
+                        <a href="https://github.com/antelmari/Pulse" target="_blank" class="portfolio__item-icon">
+                            <img src="icons/social/github-black.svg" alt="github">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,6 +258,22 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
+        var swiper = new Swiper(".portfolioSlider", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                668: {
+                    slidesPerView: 2
+                },
+                992: {
+                    spaceBetween: 70
+                }
+            }
+        });
         var swiper = new Swiper(".mySwiper", {
             effect: "coverflow",
             grabCursor: true,
