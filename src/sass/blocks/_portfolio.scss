@@ -1,4 +1,5 @@
 .portfolio {
+    position: relative;
     height: 600px;
     &__id {
         display: block;
@@ -52,4 +53,50 @@
     width: 100%;
     height: 100%;
     background-color: $main-color;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 350px;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    color: $main-color;
+    box-shadow: 0px 0px 16px rgba(127, 138, 151, 0.1);
+    border-radius: 100%;
+    z-index: 9;
+    &:after {
+        content: none;
+    }
+}
+
+.swiper-button-prev {
+    left: 50%;
+    transform: translateX(-530px);
+    &::before {
+        content: '';
+        position: absolute;
+        left: 12px;
+        width: 8px;
+        height: 8px;
+        border-bottom: 2px solid $main-color;
+        border-left: 2px solid $main-color;
+        transform: rotate(45deg);
+    }
+}
+
+.swiper-button-next {
+    right: 50%;
+    transform: translateX(530px);
+    &::before {
+        content: '';
+        position: absolute;
+        right: 12px;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid $main-color;
+        border-right: 2px solid $main-color;
+        transform: rotate(45deg);
+    }
 }
